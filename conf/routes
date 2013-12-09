@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /index                  controllers.Application.index
+GET         /                          controllers.Application.login
+
+# Authentication
+POST        /login                     controllers.Application.authenticate
+GET         /logout                    controllers.Application.logout
+
+# Messages
+GET         /message/main              controllers.Messages.main
+GET         /message/list              controllers.Messages.list
+GET         /message/detail/:id        controllers.Messages.detail(id: Int)
+GET         /message/write             controllers.Messages.write
+
+# Reactivemongo sample
+#POST        /person/cc              controllers.ReactiveMongoController.createCC
+#GET         /person/cc/:name        controllers.ReactiveMongoController.findByNameCC(name)
+
+GET         /person/:name           controllers.ReactiveMongoController.findByName(name)
+GET         /person                 controllers.ReactiveMongoController.allPersons
+PUT         /person                 controllers.ReactiveMongoController.create(name: String, age: Int)
+POST        /person                 controllers.ReactiveMongoController.createFromJson
+
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file           controllers.Assets.at(path="/public", file)
