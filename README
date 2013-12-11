@@ -1,4 +1,17 @@
 This is your new Play application
 =====================================
+<<<<<<< HEAD
 git command	
+=======
+非常简单的demo
+使用play2.2.1 +　play2-auth + Reactivemongo实现
+
+play2-auth作登录，权限处理，后端使用Reactivemongo
+
+使用说明：
+1.必要条件，JDK1.7（我用的1.7_40），Scala2.10.3， sbt0.13， play2.2.1
+2.下载zip后，解压到相应目录（最好不要包含空格或中文），进入相应的目录，运行play run
+3.在浏览器输入http://locahost:9000
+
+>>>>>>> e54ab6580db09b81556eb24d36e5cbb5ad752312
 This file will be packaged with your application, when using `play dist`.
