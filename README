@@ -1,6 +1,6 @@
 This is your new Play application
 =====================================
-<<<<<<< HEAD
+
 git command	
 =======
 非常简单的demo
@@ -13,5 +13,5 @@ play2-auth作登录，权限处理，后端使用Reactivemongo
 2.下载zip后，解压到相应目录（最好不要包含空格或中文），进入相应的目录，运行play run
 3.在浏览器输入http://locahost:9000
 
->>>>>>> e54ab6580db09b81556eb24d36e5cbb5ad752312
+
 This file will be packaged with your application, when using `play dist`.

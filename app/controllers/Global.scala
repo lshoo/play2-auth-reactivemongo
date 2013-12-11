@@ -1,7 +1,7 @@
 package controllers
 
 import play.api.mvc.WithFilters
-import play.api.GlobalSettings
+import play.api._
 import play.filters.csrf._
 import models.{UserRole, Mongo, Account}
 

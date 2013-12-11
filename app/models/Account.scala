@@ -20,6 +20,7 @@ case class Account(id: String, email: String, name: String, password: String, ro
 object Account {
 
 
+
   def collection: JSONCollection = Mongo.db.collection("accounts")
 
   def insertAll(accounts: Seq[Account]) = collection.bulkInsert(Enumerator(accounts))
