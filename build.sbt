@@ -12,12 +12,11 @@ resolvers ++= Seq(
   "Local Maven" at Path.userHome.asFile.toURI.toURL + ".m2/repository",
   "Typesafe" at "http://repo.typesafe.com/typesafe/releases",
   "oschina mvn" at "http://maven.oschina.net/",
+  "Sonatype Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/",
   "sbt-plugin-releases" at "http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"
 )
 
 libraryDependencies ++= Seq(
-  //jdbc,
-  //anorm,
   cache,
   filters,
   "com.typesafe.akka"  %% "akka-actor"       % akkaVersion,
